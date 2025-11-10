@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi to Mumbai: The Complete Journey Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'purple-light': '#c9a9dd',
+                        'purple-pastel': '#b19cd9',
+                        'purple-dark': '#8e7cc3',
+                        'yellow-light': '#fff4d6',
+                        'yellow-pastel': '#ffeaa7',
+                        'yellow-bright': '#fdcb6e',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+                    },
+                    boxShadow: {
+                        'purple': '0 15px 35px rgba(177, 156, 217, 0.3)',
+                        'yellow': '0 10px 25px rgba(255, 234, 167, 0.4)',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .floating-shape {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-shape:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .floating-shape:nth-child(2) {
+            animation-delay: -2s;
+        }
+
+        .floating-shape:nth-child(3) {
+            animation-delay: -4s;
+        }
+    </style>
+</head>
+
+<body class="font-poppins leading-relaxed text-gray-800 overflow-x-hidden">
+
+    <!-- Animated Background -->
+    <div class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10">
+        <div class="floating-shape absolute top-1/5 left-1/10 w-20 h-20 bg-purple-pastel rounded-full opacity-10"></div>
+        <div class="floating-shape absolute top-3/5 right-1/6 w-30 h-30 bg-yellow-pastel opacity-10"
+            style="clip-path: polygon(50% 0%, 0% 100%, 100% 100%)"></div>
+        <div class="floating-shape absolute bottom-1/5 left-1/5 w-25 h-25 bg-purple-light opacity-10 rotate-45"></div>
+    </div>
+
+    <!-- Hero Section with Split Design -->
+    <section class="h-screen flex relative overflow-hidden" id="home">
+        <!-- Delhi Side -->
+        <div class="flex-1 h-full relative flex items-center justify-center transition-all duration-700 cursor-pointer bg-cover bg-center group hover:flex-[2]"
+            style="background-image: linear-gradient(rgba(59, 130, 246, 0.7), rgba(147, 51, 234, 0.7)), url('../image/mu1.jpg'); clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);">
+            <div
+                class="relative z-10 text-center text-white p-8 transition-transform duration-700 group-hover:scale-110">
+                <h2 class="text-5xl mb-4 font-bold drop-shadow-lg">
+                    <i class="fas fa-landmark"></i> Delhi
+                </h2>
+                <p class="text-xl mb-6 opacity-90 drop-shadow">India's Historic Capital</p>
+                <p class="mb-6 drop-shadow">Experience Mughal architecture, vibrant markets, and rich heritage</p>
+                <a href="#places"
+                    class="inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full font-bold border-2 border-white/30 transition-all duration-300 hover:bg-white/30 hover:-translate-y-1 hover:shadow-lg">
+                    <i class="fas fa-eye mr-2"></i> Discover Delhi
+                </a>
+            </div>
+        </div>
+
+        <!-- Mumbai Side - Updated Content -->
+        <div class="flex-1 h-full relative flex items-center justify-center transition-all duration-700 cursor-pointer bg-cover bg-center group hover:flex-[2]"
+            style="background-image: linear-gradient(rgba(255, 152, 0, 0.7), rgba(255, 87, 34, 0.7)), url('../image/mu2.jpg'); clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);">
+            <div
+                class="relative z-10 text-center text-white p-8 transition-transform duration-700 group-hover:scale-110">
+                <h2 class="text-5xl mb-4 font-bold drop-shadow-lg">
+                    <i class="fas fa-building"></i> Mumbai
+                </h2>
+                <p class="text-xl mb-6 opacity-90 drop-shadow">The City of Dreams</p>
+                <p class="mb-6 drop-shadow">Experience marine drives, iconic landmarks, and the bustling financial
+                    capital</p>
+                <a href="#places"
+                    class="inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full font-bold border-2 border-white/30 transition-all duration-300 hover:bg-white/30 hover:-translate-y-1 hover:shadow-lg">
+                    <i class="fas fa-city mr-2"></i> Discover Mumbai
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm py-4 sticky top-0 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto flex justify-center gap-8 px-8">
+            <a href="#home"
+                class="text-purple-dark font-medium px-4 py-2 rounded-full transition-all duration-300 hover:text-white hover:-translate-y-1 hover:bg-gradient-to-r hover:from-purple-pastel hover:to-yellow-pastel hover:shadow-purple relative overflow-hidden group">
+                <span class="relative z-10"><i class="fas fa-home mr-2"></i> Home</span>
+            </a>
+            <a href="#journey"
+                class="text-purple-dark font-medium px-4 py-2 rounded-full transition-all duration-300 hover:text-white hover:-translate-y-1 hover:bg-gradient-to-r hover:from-purple-pastel hover:to-yellow-pastel hover:shadow-purple relative overflow-hidden group">
+                <span class="relative z-10"><i class="fas fa-map-marked-alt mr-2"></i> Journey</span>
+            </a>
+            <a href="#culture"
+                class="text-purple-dark font-medium px-4 py-2 rounded-full transition-all duration-300 hover:text-white hover:-translate-y-1 hover:bg-gradient-to-r hover:from-purple-pastel hover:to-yellow-pastel hover:shadow-purple relative overflow-hidden group">
+                <span class="relative z-10"><i class="fas fa-palette mr-2"></i> Culture</span>
+            </a>
+            <a href="#experience"
+                class="text-purple-dark font-medium px-4 py-2 rounded-full transition-all duration-300 hover:text-white hover:-translate-y-1 hover:bg-gradient-to-r hover:from-purple-pastel hover:to-yellow-pastel hover:shadow-purple relative overflow-hidden group">
+                <span class="relative z-10"><i class="fas fa-star mr-2"></i> Experience</span>
+            </a>
+            <a href="#planning"
+                class="text-purple-dark font-medium px-4 py-2 rounded-full transition-all duration-300 hover:text-white hover:-translate-y-1 hover:bg-gradient-to-r hover:from-purple-pastel hover:to-yellow-pastel hover:shadow-purple relative overflow-hidden group">
+                <span class="relative z-10"><i class="fas fa-calendar mr-2"></i> Planning</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Simple Journey Introduction Section -->
+    <section class="py-20 opacity-0 translate-y-12 transition-all duration-500 section" id="journey">
+        <div class="max-w-6xl mx-auto px-8">
+            <!-- Main Content Card -->
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+
+                    <!-- Image Section -->
+                    <div class="relative h-96 lg:h-auto">
+                        <img src="../image/mu3.jpg" alt="Delhi to Mumbai Journey" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20"></div>
+                    </div>
+
+                    <!-- Content Section -->
+                    <div class="p-8 lg:p-12 flex flex-col justify-center">
+                        <div class="mb-6">
+                            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">
+                                Travel Guide
+                            </span>
+                        </div>
+
+                        <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                            Delhi to Mumbai Travel Guide
+                        </h2>
+
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">Introduction</h3>
+
+                        <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                            The distance between <span class="font-semibold text-blue-600">Delhi and Mumbai</span>
+                            connects two of India's most vibrant cities, offering travellers a mix of <span
+                                class="font-semibold text-purple-600">history</span>, <span
+                                class="font-semibold text-pink-600">culture</span>, and <span
+                                class="font-semibold text-orange-600">scenic experiences</span>. Whether you're planning
+                            a business trip, a family vacation, or a road trip adventure, this guide covers all the
+                            essential details to help you make informed travel decisions.
+                        </p>
+
+                        <!-- Call to Action -->
+                        <div>
+                            <a href="#experience"
+                                class="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+                                <i class="fas fa-arrow-right mr-2"></i>
+                                Explore Travel Options
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Heritage Section -->
+    <section
+        class="py-20 bg-gradient-to-br from-orange-50 to-red-50 opacity-0 translate-y-12 transition-all duration-500 section"
+        id="culture">
+        <div class="max-w-6xl mx-auto px-8">
+            <h2 class="text-4xl text-center mb-12 text-purple-dark relative">
+                <i class="fas fa-landmark mr-4"></i>Historical Places
+                <div
+                    class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-purple-pastel to-yellow-pastel rounded-full">
+                </div>
+            </h2>
+
+            <!-- Delhi Historical Places -->
+            <div class="mb-16">
+                <h3 class="text-center my-12 text-red-600 text-3xl font-semibold">
+                    <i class="fas fa-crown mr-3"></i> Delhi Connections
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Red Fort -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl transform perspective-1000 rotate-x-2 rotate-y-1"
+                        style="box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1);">
+                        <div class="h-64 bg-cover bg-center relative" style="background-image: url('../image/mu4.jpg')">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-red-900/80 to-transparent flex items-end justify-center">
+                                <div class="p-6 text-white text-center">
+                                    <h4 class="text-xl font-bold drop-shadow-lg">
+                                        <i class="fas fa-building mr-2"></i>Red Fort
+                                    </h4>
+                                    <p class="text-sm mt-2 drop-shadow-md">UNESCO World Heritage Site</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-gradient-to-b from-white to-gray-50 text-center">
+                            <p class="text-gray-600">A stunning example of Mughal architecture and a UNESCO World
+                                Heritage Site showcasing imperial grandeur.</p>
+                        </div>
+                    </div>
+
+                    <!-- Qutub Minar -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl transform perspective-1000 -rotate-x-1 rotate-y-2"
+                        style="box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1);">
+                        <div class="h-64 bg-cover bg-center relative" style="background-image: url('../image/mu5.jpg')">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-yellow-900/80 to-transparent flex items-end justify-center">
+                                <div class="p-6 text-white text-center">
+                                    <h4 class="text-xl font-bold drop-shadow-lg">
+                                        <i class="fas fa-archway mr-2"></i>Qutub Minar
+                                    </h4>
+                                    <p class="text-sm mt-2 drop-shadow-md">World's tallest brick minaret</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-gradient-to-b from-white to-gray-50 text-center">
+                            <p class="text-gray-600">The world's tallest brick minaret and a symbol of Indo-Islamic art
+                                representing architectural excellence.</p>
+                        </div>
+                    </div>
+
+                    <!-- Humayun's Tomb -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl transform perspective-1000 rotate-x-1 -rotate-y-1"
+                        style="box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1);">
+                        <div class="h-64 bg-cover bg-center relative" style="background-image: url('../image/mu6.jpg')">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-green-900/80 to-transparent flex items-end justify-center">
+                                <div class="p-6 text-white text-center">
+                                    <h4 class="text-xl font-bold drop-shadow-lg">
+                                        <i class="fas fa-monument mr-2"></i>Humayun's Tomb
+                                    </h4>
+                                    <p class="text-sm mt-2 drop-shadow-md">Precursor to Taj Mahal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-gradient-to-b from-white to-gray-50 text-center">
+                            <p class="text-gray-600">A precursor to the Taj Mahal's grandeur, showcasing early Mughal
+                                architectural brilliance.</p>
+                        </div>
+                    </div>
+
+                    <!-- India Gate -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl transform perspective-1000 -rotate-x-2 -rotate-y-2"
+                        style="box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1);">
+                        <div class="h-64 bg-cover bg-center relative" style="background-image: url('../image/mu4.jpg')">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent flex items-end justify-center">
+                                <div class="p-6 text-white text-center">
+                                    <h4 class="text-xl font-bold drop-shadow-lg">
+                                        <i class="fas fa-archway mr-2"></i>India Gate
+                                    </h4>
+                                    <p class="text-sm mt-2 drop-shadow-md">Illuminated war memorial</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-gradient-to-b from-white to-gray-50 text-center">
+                            <p class="text-gray-600">A war memorial that comes alive with evening lights, honoring
+                                India's brave soldiers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mumbai Historical Places -->
+            <div class="mb-16">
+                <h3 class="text-center my-12 text-blue-600 text-3xl font-semibold">
+                    <i class="fas fa-building mr-3"></i>Mumbai Connections
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Gateway of India -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl"
+                        style="box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1);">
+                        <div class="h-64 bg-cover bg-center relative" style="background-image: url('../image/mu8.jpg')">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-orange-900/80 to-transparent flex items-end justify-center">
+                                <div class="p-6 text-white text-center">
+                                    <h4 class="text-xl font-bold drop-shadow-lg">
+                                        <i class="fas fa-archway mr-2"></i>Gateway of India
+                                    </h4>
+                                    <p class="text-sm mt-2 drop-shadow-md">Colonial-era landmark</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-gradient-to-b from-white to-gray-50 text-center">
+                            <p class="text-gray-600">A colonial-era landmark by the Arabian Sea, symbolizing Mumbai's
+                                historical significance.</p>
+                        </div>
+                    </div>
+
+                    <!-- Chhatrapati Shivaji Terminus -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl"
+                        style="box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1);">
+                        <div class="h-64 bg-cover bg-center relative" style="background-image: url('../image/mu9.jpg')">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-purple-900/80 to-transparent flex items-end justify-center">
+                                <div class="p-6 text-white text-center">
+                                    <h4 class="text-xl font-bold drop-shadow-lg">
+                                        <i class="fas fa-train mr-2"></i>Chhatrapati Shivaji Terminus
+                                    </h4>
+                                    <p class="text-sm mt-2 drop-shadow-md">Gothic & Victorian blend</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-gradient-to-b from-white to-gray-50 text-center">
+                            <p class="text-gray-600">A UNESCO World Heritage Site blending Gothic and Victorian
+                                architecture in magnificent harmony.</p>
+                        </div>
+                    </div>
+
+                    <!-- Elephanta Caves -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl"
+                        style="box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1);">
+                        <div class="h-64 bg-cover bg-center relative" style="background-image: url('../image/mu10.jpg')">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-teal-900/80 to-transparent flex items-end justify-center">
+                                <div class="p-6 text-white text-center">
+                                    <h4 class="text-xl font-bold drop-shadow-lg">
+                                        <i class="fas fa-mountain mr-2"></i>Elephanta Caves
+                                    </h4>
+                                    <p class="text-sm mt-2 drop-shadow-md">Ancient rock-cut temples</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-gradient-to-b from-white to-gray-50 text-center">
+                            <p class="text-gray-600">Ancient rock-cut temples dedicated to Lord Shiva, showcasing
+                                incredible craftsmanship.</p>
+                        </div>
+                    </div>
+
+                    <!-- Haji Ali Dargah -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl"
+                        style="box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1);">
+                        <div class="h-64 bg-cover bg-center relative" style="background-image: url('../image/mu11.jpg')">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent flex items-end justify-center">
+                                <div class="p-6 text-white text-center">
+                                    <h4 class="text-xl font-bold drop-shadow-lg">
+                                        <i class="fas fa-mosque mr-2"></i>Haji Ali Dargah
+                                    </h4>
+                                    <p class="text-sm mt-2 drop-shadow-md">Floating mosque</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 bg-gradient-to-b from-white to-gray-50 text-center">
+                            <p class="text-gray-600">A serene mosque floating on the Arabian Sea, offering spiritual
+                                tranquility and stunning views.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Banner -->
+    <section>
+         <!-- Ad Banner -->
+    <div class="flex justify-center">
+        <div class="relative w-96 sm:w-full md:w-[50rem] lg:w-[40rem] xl:w-[60rem] h-auto rounded-5xl overflow-hidden">
+            <!-- Background Image -->
+            <div class="w-full h-24 sm:h-28 md:h-32 lg:h-36 bg-cover bg-center bg-no-repeat rounded-full"
+                style="background-image: url('../image/banner.png');">
+
+
+
+
+                <!-- Content Container -->
+                <div class="relative h-full flex items-center justify-between px-6 sm:px-8 md:px-10 lg:px-12">
+
+                    <!-- Left Side - Text Content -->
+                    <div class="flex items-center space-x-3">
+
+
+                        <!-- Text Content -->
+                        <div class="text-white">
+                            <h3 class="text-sm sm:text-base md:text-lg lg:text-xl font-medium">
+                                The city that never sleeps meets travelers<br>
+                                <span class="text-sm sm:text-base md:text-lg lg:text-xl font-medium">who never
+                                    settle</span>
+                            </h3>
+                            <p class="text-xs sm:text-sm md:text-base text-gray-200 mt-1">
+                                <i class="fas fa-map-marker-alt mr-1"></i>New York
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Side - CTA Button -->
+                    <div class="flex flex-col items-end space-y-2">
+                        <button
+                            class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-4 py-2 sm:px-8 sm:py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            Explore
+                        </button>
+                        <p class="text-xs text-gray-300">*T&C Apply</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Travel Experience Section -->
+    <section class="py-20 opacity-0 translate-y-12 transition-all duration-500 section" id="experience">
+        <div class="max-w-7xl mx-auto px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 relative">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 rounded-3xl blur-3xl opacity-20 animate-pulse">
+                </div>
+                <div class="relative z-10">
+                    <h2
+                        class="text-5xl font-extrabold bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-700 bg-clip-text text-transparent mb-4">
+                        Explore Your Journey: Travel Experiences
+                    </h2>
+                    <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                        Discover unique ways to travel and memorable experiences from Delhi to Mumbai
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+                <!-- Flight Experience -->
+                <div class="relative rounded-3xl"
+                    style="box-shadow: 0 2px 30px rgba(14, 165, 233, 0.9); background: transparent;">
+                    <div
+                        class="rounded-3xl overflow-hidden bg-gradient-to-br from-sky-300 to-blue-500 text-white flex flex-col">
+                        <img src="../image/mu13.jpg" alt="Flight Experience" class="w-full h-56 object-cover">
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-3xl font-semibold mb-3">Flight Connect</h3>
+                                <p class="opacity-90 mb-4">Premium Air Travel</p>
+                                <ul class="list-disc pl-5 space-y-2 opacity-90">
+                                    <li>Journey Time: Around 2 hours</li>
+                                    <li>Best for Business Travelers & Time-Crunched</li>
+                                    <li>Tip: Book early for best rates</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Train Experience -->
+                <div class="relative rounded-3xl"
+                    style="box-shadow: 0 2px 30px rgba(22, 163, 74, 0.9); background: transparent;">
+                    <div
+                        class="rounded-3xl overflow-hidden bg-gradient-to-br from-green-300 to-emerald-500 text-white flex flex-col">
+                        <img src="../image/mu14.jpg" alt="Train Experience" class="w-full h-56 object-cover">
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-3xl font-semibold mb-3">Rail Journey</h3>
+                                <p class="opacity-90 mb-4">Classic Train Journey</p>
+                                <ul class="list-disc pl-5 space-y-2 opacity-90">
+                                    <li>Journey Time: 15-20 hours</li>
+                                    <li>Popular: Rajdhani Express & superfast trains</li>
+                                    <li>Multiple classes for all budgets</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Road Trip Experience -->
+                <div class="relative rounded-3xl"
+                    style="box-shadow: 0 2px 30px rgba(251, 146, 60, 0.9); background: transparent;">
+                    <div
+                        class="rounded-3xl overflow-hidden bg-gradient-to-br from-orange-300 to-red-500 text-white flex flex-col">
+                        <img src="../image/mu15.jpg" alt="Road Trip" class="w-full h-56 object-cover">
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-3xl font-semibold mb-3">Road Adventure</h3>
+                                <p class="opacity-90 mb-4">Ultimate Road Trip Experience</p>
+                                <ul class="list-disc pl-5 space-y-2 opacity-90">
+                                    <li>Route: Delhi to Mumbai via NH48</li>
+                                    <li>Scenic stops include Jaipur, Udaipur, Surat</li>
+                                    <li>Enjoy regional cuisines along the way</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Experience & Tips Section -->
+    <section class="py-20 opacity-0   section" id="experience">
+        <div class="max-w-6xl mx-auto px-8">
+            <h2 class="text-4xl text-center mb-12 text-purple-dark relative">
+                <i class="fas fa-magic mr-4"></i>Travel Experience & Smart Tips
+                <div
+                    class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-purple-pastel to-yellow-pastel rounded-full">
+                </div>
+            </h2>
+
+            <!-- Experience Banner Image -->
+            <div class="mb-12 relative">
+                <img src="../image/mu19.jpg" alt="Travel Experience" class="w-full h-64 object-cover rounded-2xl shadow-xl">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-purple-600/70 to-blue-600/70 rounded-2xl flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <i class="fas fa-heart text-5xl mb-4 animate-pulse"></i>
+                        <h3 class="text-3xl font-bold">Unforgettable Journey</h3>
+                        <p class="text-lg opacity-90">Create Memories Between Two Great Cities</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Experience Cards -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-6">
+                        <i class="fas fa-star mr-3"></i>Travel Experiences
+                    </h3>
+
+                    <div
+                        class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-blue-500 shadow-[0_10px_60px_rgba(0,0,0,0.2)]">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-camera text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Cultural Photography</h4>
+                                <p class="text-gray-600 text-sm">Capture the architectural contrasts between Delhi's
+                                    Mughal heritage and Kolkata's colonial grandeur.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-green-500 shadow-[0_10px_60px_rgba(0,0,0,0.2)]">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-utensils text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Culinary Journey</h4>
+                                <p class="text-gray-600 text-sm">From Delhi's street food to Kolkata's sweets -
+                                    experience diverse flavors along the route.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-purple-500 shadow-[0_10px_60px_rgba(0,0,0,0.2)]">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-book text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Literary Trail</h4>
+                                <p class="text-gray-600 text-sm">Follow the footsteps of great writers and poets in the
+                                    cultural capital of India.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+        class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-orange-500 shadow-[0_10px_60px_rgba(0,0,0,0.2)]">
+        <div class="flex items-start">
+            <div class="bg-orange-100 rounded-full p-3 mr-4">
+                <i class="fas fa-route text-orange-600 text-xl"></i>
+            </div>
+            <div>
+                <h4 class="font-bold text-gray-800 mb-2">Route Planning</h4>
+                <p class="text-gray-600 text-sm">Provides multiple route options with detailed distance calculations and travel recommendations.</p>
+            </div>
+        </div>
+    </div>
+                </div>
+
+                <!-- Smart Tips -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-purple-600 mb-6">
+                        <i class="fas fa-lightbulb mr-3"></i>Smart Travel Tips
+                    </h3>
+
+                    <div
+                        class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-6 shadow-[0_10px_60px_rgba(0,0,0,0.2)]">
+                        <div class="flex items-start">
+                            <div class="bg-yellow-200 rounded-full p-2 mr-4 flex-shrink-0">
+                                <i class="fas fa-clock text-yellow-700 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Best Travel Times</h4>
+                                <p class="text-gray-600 text-sm">October to March for pleasant weather. Book flights 2-3
+                                    weeks advance for better deals.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-6 shadow-lg shadow-[0_10px_60px_rgba(0,0,0,0.2)]">
+                        <div class="flex items-start">
+                            <div class="bg-green-200 rounded-full p-2 mr-4 flex-shrink-0">
+                                <i class="fas fa-wallet text-green-700 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Budget Planning</h4>
+                                <p class="text-gray-600 text-sm">Train sleeper class: Most economical. Flight:
+                                    Time-saving for business. Road: Adventure seekers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-lg shadow-[0_10px_60px_rgba(0,0,0,0.2)]">
+                        <div class="flex items-start">
+                            <div class="bg-blue-200 rounded-full p-2 mr-4 flex-shrink-0">
+                                <i class="fas fa-mobile-alt text-blue-700 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Digital Essentials</h4>
+                                <p class="text-gray-600 text-sm">Download offline maps, book tickets via apps, keep
+                                    digital copies of IDs for smooth travel.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-lg">
+                        <div class="flex items-start">
+                            <div class="bg-purple-200 rounded-full p-2 mr-4 flex-shrink-0">
+                                <i class="fas fa-shield-alt text-purple-700 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Safety First</h4>
+                                <p class="text-gray-600 text-sm">Share travel plans with family, keep emergency contacts
+                                    handy, prefer daylight travel for road trips.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+
+    <!-- Compact Blue Pastel Conclusion Section -->
+    <section class="relative py-16 bg-gradient-to-br from-blue-300 via-blue-200 to-blue-100 text-blue-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div
+                class="inline-flex items-center justify-center w-16 h-16 bg-blue-400 rounded-full shadow-lg mx-auto mb-6">
+                <i class="fas fa-rocket text-3xl text-blue-800"></i>
+            </div>
+            <h2 class="text-3xl font-bold mb-4 leading-tight">
+                Start Your Journey
+            </h2>
+            <p class="text-lg max-w-2xl mx-auto text-blue-800 mb-8">
+                Whether you're travelling for <span class="font-semibold text-blue-700">business</span>,
+                <span class="font-semibold text-blue-700">leisure</span>, or
+                <span class="font-semibold text-blue-700">adventure</span>,
+                the distance between Delhi and Mumbai offers endless possibilities for exploration. With this
+                guide, plan your journey to make the most of your time and discover the hidden gems along the
+                way.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-blue-100 p-4 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold text-blue-800 mb-2">
+                        Fast Travel
+                    </h3>
+                    <p class="text-blue-700 text-sm">
+                        Quick flights in just 2 hours
+                    </p>
+                </div>
+                <div class="bg-blue-100 p-4 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold text-blue-800 mb-2">
+                        Rich Culture
+                    </h3>
+                    <p class="text-blue-700 text-sm">
+                        Historic train journeys
+                    </p>
+                </div>
+                <div class="bg-blue-100 p-4 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold text-blue-800 mb-2">
+                        Free Exploration
+                    </h3>
+                    <p class="text-blue-700 text-sm">
+                        Scenic road trips
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Popular Cities Auto-Scroll Section with Navigation Arrows -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 opacity-0 translate-y-12 transition-all duration-500 section" id="popular-cities">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full mb-6 shadow-lg">
+                    <i class="fas fa-city text-white text-2xl"></i>
+                </div>
+                <h2 class="text-4xl font-bold text-blue-600 mb-4">
+                    Explore Popular Cities in India
+                </h2>
+                <div class="w-32 h-1 bg-blue-500 rounded-full mx-auto"></div>
+            </div>
+
+            <!-- Cities Carousel Container -->
+            <div class="relative">
+                <!-- Left Arrow -->
+                <button id="scrollLeft" 
+                        class="absolute left-0 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-90 hover:bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                    <i class="fas fa-chevron-left text-blue-600 text-xl group-hover:scale-110 transition-transform"></i>
+                </button>
+
+                <!-- Right Arrow -->
+                <button id="scrollRight" 
+                        class="absolute right-0 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-90 hover:bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                    <i class="fas fa-chevron-right text-blue-600 text-xl group-hover:scale-110 transition-transform"></i>
+                </button>
+
+                <!-- Auto-Scrolling Cities Container -->
+                <div class="overflow-x-hidden mx-12" id="cities-scroll-container">
+                    <div class="flex space-x-4 pb-4" id="cities-row">
+                        
+                       <!-- Agra -->
+            <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-crown text-white text-lg"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Agra</h3>
+                    <p class="text-xs text-gray-500 mt-1">Taj Mahal City</p>
+                </div>
+            </div>
+
+            <!-- Ahmedabad -->
+            <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-landmark text-white text-lg"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Ahmedabad</h3>
+                    <p class="text-xs text-gray-500 mt-1">Heritage City</p>
+                </div>
+            </div>
+
+            <!-- Amritsar -->
+            <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-gradient-to-r from-orange-400 to-amber-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-place-of-worship text-white text-lg"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Amritsar</h3>
+                    <p class="text-xs text-gray-500 mt-1">Holy City</p>
+                </div>
+            </div>
+
+            <!-- Bengaluru -->
+            <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-gradient-to-r from-green-400 to-blue-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-laptop-code text-white text-lg"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Bengaluru</h3>
+                    <p class="text-xs text-gray-500 mt-1">IT Hub</p>
+                </div>
+            </div>
+
+            <!-- Bhopal -->
+            <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-gradient-to-r from-teal-400 to-green-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-tree text-white text-lg"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Bhopal</h3>
+                    <p class="text-xs text-gray-500 mt-1">City of Lakes</p>
+                </div>
+            </div>
+
+            <!-- Chandigarh -->
+            <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-city text-white text-lg"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Chandigarh</h3>
+                    <p class="text-xs text-gray-500 mt-1">Planned City</p>
+                </div>
+            </div>
+
+            <!-- Chennai -->
+            <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-ship text-white text-lg"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Chennai</h3>
+                    <p class="text-xs text-gray-500 mt-1">Detroit of India</p>
+                </div>
+            </div>
+
+            <!-- Faridabad -->
+            <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-cogs text-white text-lg"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Faridabad</h3>
+                    <p class="text-xs text-gray-500 mt-1">Industrial City</p>
+                </div>
+            </div>
+
+            <!-- Hyderabad -->
+            <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-gradient-to-r from-violet-400 to-purple-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-microchip text-white text-lg"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Hyderabad</h3>
+                    <p class="text-xs text-gray-500 mt-1">Cyberabad</p>
+                </div>
+            </div>
+
+              <!-- Jaipur -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-pink-400 to-red-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-fort-awesome text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Jaipur</h3>
+                            <p class="text-xs text-gray-500 mt-1">Pink City</p>
+                        </div>
+                    </div>
+
+                    <!-- Jamshedpur -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-slate-400 to-gray-600 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-hammer text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Jamshedpur</h3>
+                            <p class="text-xs text-gray-500 mt-1">Steel City</p>
+                        </div>
+                    </div>
+
+                    <!-- Kanpur -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-gray-400 to-blue-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-industry text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Kanpur</h3>
+                            <p class="text-xs text-gray-500 mt-1">Industrial Hub</p>
+                        </div>
+                    </div>
+
+                    <!-- Kolkata -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-pink-400 to-purple-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-theater-masks text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Kolkata</h3>
+                            <p class="text-xs text-gray-500 mt-1">Cultural Capital</p>
+                        </div>
+                    </div>
+
+                    <!-- Lucknow -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-purple-400 to-indigo-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-mosque text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Lucknow</h3>
+                            <p class="text-xs text-gray-500 mt-1">City of Nawabs</p>
+                        </div>
+                    </div>
+
+                    <!-- Madurai -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-rose-400 to-red-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-gopuram text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Madurai</h3>
+                            <p class="text-xs text-gray-500 mt-1">Temple City</p>
+                        </div>
+                    </div>
+
+                    <!-- Meerut -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-orange-400 to-yellow-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-scissors text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Meerut</h3>
+                            <p class="text-xs text-gray-500 mt-1">Sports City</p>
+                        </div>
+                    </div>
+
+                    <!-- Mumbai -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-orange-400 to-red-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-building text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Mumbai</h3>
+                            <p class="text-xs text-gray-500 mt-1">Financial Capital</p>
+                        </div>
+                    </div>
+
+                    <!-- Nagpur -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-red-400 to-pink-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-map-marker-alt text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Nagpur</h3>
+                            <p class="text-xs text-gray-500 mt-1">Orange City</p>
+                        </div>
+                    </div>
+
+                    <!-- Nashik -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-purple-400 to-pink-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-wine-glass-alt text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Nashik</h3>
+                            <p class="text-xs text-gray-500 mt-1">Wine Capital</p>
+                        </div>
+                    </div>
+
+                    <!-- Patna -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-yellow-400 to-red-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-university text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Patna</h3>
+                            <p class="text-xs text-gray-500 mt-1">Ancient Capital</p>
+                        </div>
+                    </div>
+
+                    <!-- Pune -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-graduation-cap text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Pune</h3>
+                            <p class="text-xs text-gray-500 mt-1">Oxford of East</p>
+                        </div>
+                    </div>
+
+                    <!-- Raipur -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-green-400 to-emerald-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-leaf text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Raipur</h3>
+                            <p class="text-xs text-gray-500 mt-1">Rice Bowl</p>
+                        </div>
+                    </div>
+
+                    <!-- Surat -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-emerald-400 to-teal-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-gem text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Surat</h3>
+                            <p class="text-xs text-gray-500 mt-1">Diamond City</p>
+                        </div>
+                    </div>
+
+                    <!-- Udaipur -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-water text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Udaipur</h3>
+                            <p class="text-xs text-gray-500 mt-1">City of Lakes</p>
+                        </div>
+                    </div>
+
+                    <!-- Vijayawada -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-blue-400 to-teal-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-water text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Vijayawada</h3>
+                            <p class="text-xs text-gray-500 mt-1">Bezawada</p>
+                        </div>
+                    </div>
+
+                    <!-- Visakhapatnam -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-teal-400 to-cyan-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-anchor text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Visakhapatnam</h3>
+                            <p class="text-xs text-gray-500 mt-1">Port City</p>
+                        </div>
+                    </div>
+
+                    <!-- DUPLICATE SET FOR CONTINUOUS LOOP -->
+                    
+                    <!-- Agra (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-crown text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Agra</h3>
+                            <p class="text-xs text-gray-500 mt-1">Taj Mahal City</p>
+                        </div>
+                    </div>
+
+                    <!-- Ahmedabad (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-landmark text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Ahmedabad</h3>
+                            <p class="text-xs text-gray-500 mt-1">Heritage City</p>
+                        </div>
+                    </div>
+
+                    <!-- Amritsar (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-orange-400 to-amber-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-place-of-worship text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Amritsar</h3>
+                            <p class="text-xs text-gray-500 mt-1">Holy City</p>
+                        </div>
+                    </div>
+
+                    <!-- Bengaluru (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-green-400 to-blue-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-laptop-code text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Bengaluru</h3>
+                            <p class="text-xs text-gray-500 mt-1">IT Hub</p>
+                        </div>
+                    </div>
+
+                    <!-- Bhopal (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-teal-400 to-green-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-tree text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Bhopal</h3>
+                            <p class="text-xs text-gray-500 mt-1">City of Lakes</p>
+                        </div>
+                    </div>
+
+                    <!-- Chandigarh (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-city text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Chandigarh</h3>
+                            <p class="text-xs text-gray-500 mt-1">Planned City</p>
+                        </div>
+                    </div>
+
+                    <!-- Chennai (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-ship text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Chennai</h3>
+                            <p class="text-xs text-gray-500 mt-1">Detroit of India</p>
+                        </div>
+                    </div>
+
+                    <!-- Faridabad (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-cogs text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Faridabad</h3>
+                            <p class="text-xs text-gray-500 mt-1">Industrial City</p>
+                        </div>
+                    </div>
+
+                    <!-- Hyderabad (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-violet-400 to-purple-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-microchip text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Hyderabad</h3>
+                            <p class="text-xs text-gray-500 mt-1">Cyberabad</p>
+                        </div>
+                    </div>
+
+                    <!-- Jaipur (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-pink-400 to-red-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-fort-awesome text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Jaipur</h3>
+                            <p class="text-xs text-gray-500 mt-1">Pink City</p>
+                        </div>
+                    </div>
+
+                    <!-- Jamshedpur (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-slate-400 to-gray-600 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-hammer text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Jamshedpur</h3>
+                            <p class="text-xs text-gray-500 mt-1">Steel City</p>
+                        </div>
+                    </div>
+
+                    <!-- Kanpur (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-gray-400 to-blue-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-industry text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Kanpur</h3>
+                            <p class="text-xs text-gray-500 mt-1">Industrial Hub</p>
+                        </div>
+                    </div>
+
+                    <!-- Kolkata (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-pink-400 to-purple-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-theater-masks text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Kolkata</h3>
+                            <p class="text-xs text-gray-500 mt-1">Cultural Capital</p>
+                        </div>
+                    </div>
+
+                    <!-- Lucknow (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-purple-400 to-indigo-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-mosque text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Lucknow</h3>
+                            <p class="text-xs text-gray-500 mt-1">City of Nawabs</p>
+                        </div>
+                    </div>
+
+                    <!-- Madurai (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-rose-400 to-red-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-gopuram text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Madurai</h3>
+                            <p class="text-xs text-gray-500 mt-1">Temple City</p>
+                        </div>
+                    </div>
+
+                    <!-- Meerut (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-orange-400 to-yellow-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-scissors text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Meerut</h3>
+                            <p class="text-xs text-gray-500 mt-1">Sports City</p>
+                        </div>
+                    </div>
+
+                    <!-- Mumbai (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-orange-400 to-red-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-building text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Mumbai</h3>
+                            <p class="text-xs text-gray-500 mt-1">Financial Capital</p>
+                        </div>
+                    </div>
+
+                    <!-- Nagpur (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-red-400 to-pink-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-map-marker-alt text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Nagpur</h3>
+                            <p class="text-xs text-gray-500 mt-1">Orange City</p>
+                        </div>
+                    </div>
+
+                    <!-- Nashik (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-purple-400 to-pink-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-wine-glass-alt text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Nashik</h3>
+                            <p class="text-xs text-gray-500 mt-1">Wine Capital</p>
+                        </div>
+                    </div>
+
+                    <!-- Patna (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-yellow-400 to-red-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-university text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Patna</h3>
+                            <p class="text-xs text-gray-500 mt-1">Ancient Capital</p>
+                        </div>
+                    </div>
+
+                    <!-- Pune (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-graduation-cap text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Pune</h3>
+                            <p class="text-xs text-gray-500 mt-1">Oxford of East</p>
+                        </div>
+                    </div>
+
+                    <!-- Raipur (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-green-400 to-emerald-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-leaf text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Raipur</h3>
+                            <p class="text-xs text-gray-500 mt-1">Rice Bowl</p>
+                        </div>
+                    </div>
+
+                    <!-- Surat (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-emerald-400 to-teal-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-gem text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Surat</h3>
+                            <p class="text-xs text-gray-500 mt-1">Diamond City</p>
+                        </div>
+                    </div>
+
+                    <!-- Udaipur (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-water text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Udaipur</h3>
+                            <p class="text-xs text-gray-500 mt-1">City of Lakes</p>
+                        </div>
+                    </div>
+
+                    <!-- Vijayawada (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-blue-400 to-teal-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-water text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Vijayawada</h3>
+                            <p class="text-xs text-gray-500 mt-1">Bezawada</p>
+                        </div>
+                    </div>
+
+                    <!-- Visakhapatnam (2nd) -->
+                    <div class="group bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer border hover:border-blue-300 min-w-[140px] flex-shrink-0">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-r from-teal-400 to-cyan-500 rounded-full p-3 mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-anchor text-white text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300 text-sm">Visakhapatnam</h3>
+                            <p class="text-xs text-gray-500 mt-1">Port City</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+   
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-br from-blue-500 to-purple-600 py-16 text-white text-center">
+        <div class="max-w-6xl mx-auto px-8">
+            <h2 class="text-4xl mb-10 font-semibold drop-shadow">
+                Explore More About These Cities
+            </h2>
+            <div class="flex justify-center gap-8 flex-wrap">
+                <!-- Delhi Button -->
+                <button
+                    class="bg-yellow-500/20 border border-yellow-400/40 rounded-xl px-8 py-5 text-white text-lg font-medium cursor-pointer transition-all duration-300 backdrop-blur-sm shadow-lg relative overflow-hidden flex items-center gap-3 min-w-44 justify-center hover:-translate-y-1 hover:bg-blue-400/30 hover:border-blue-300/60 hover:shadow-2xl group">
+                    <i
+                        class="fas fa-map-marker-alt text-xl transition-transform group-hover:scale-110 text-cyan-300"></i>
+                    <span class="font-medium tracking-wide">Explore Delhi</span>
+                </button>
+
+                <!-- Mumbai Button -->
+                <button
+                    class="bg-orange-500/20 border border-orange-400/40 rounded-xl px-8 py-5 text-orange-100 text-lg font-medium cursor-pointer transition-all duration-300 backdrop-blur-sm shadow-lg relative overflow-hidden flex items-center gap-3 min-w-44 justify-center hover:-translate-y-1 hover:bg-blue-400/30 hover:border-orange-300/60 hover:shadow-2xl group">
+                    <i
+                        class="fas fa-map-marker-alt text-xl transition-transform group-hover:scale-110 text-amber-300"></i>
+                    <span class="font-medium tracking-wide">Explore Mumbai</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Auto-scroll functionality for cities
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollContainer = document.getElementById('cities-scroll-container');
+            const citiesRow = document.getElementById('cities-row');
+            const scrollLeftBtn = document.getElementById('scrollLeft');
+            const scrollRightBtn = document.getElementById('scrollRight');
+            
+            let scrollAmount = 0;
+            const cityWidth = 156; // Actual width including margins
+            let autoScrollInterval;
+            
+            // Auto scroll function
+            function startAutoScroll() {
+                autoScrollInterval = setInterval(() => {
+                    scrollAmount += 1;
+                    citiesRow.style.transform = `translateX(-${scrollAmount}px)`;
+                    
+                    // Reset when reaching end
+                    if (scrollAmount >= citiesRow.scrollWidth / 2) {
+                        scrollAmount = 0;
+                    }
+                }, 50);
+            }
+            
+            // Stop auto scroll
+            function stopAutoScroll() {
+                clearInterval(autoScrollInterval);
+            }
+            
+            // Manual scroll left
+            scrollLeftBtn.addEventListener('click', () => {
+                stopAutoScroll();
+                scrollAmount -= cityWidth * 3;
+                if (scrollAmount < 0) scrollAmount = 0;
+                citiesRow.style.transform = `translateX(-${scrollAmount}px)`;
+                
+                setTimeout(() => {
+                    startAutoScroll();
+                }, 3000);
+            });
+            
+            // Manual scroll right
+            scrollRightBtn.addEventListener('click', () => {
+                stopAutoScroll();
+                scrollAmount += cityWidth * 3;
+                if (scrollAmount >= citiesRow.scrollWidth / 2) {
+                    scrollAmount = 0;
+                }
+                citiesRow.style.transform = `translateX(-${scrollAmount}px)`;
+                
+                setTimeout(() => {
+                    startAutoScroll();
+                }, 3000);
+            });
+            
+            // Pause on hover
+            citiesRow.addEventListener('mouseenter', stopAutoScroll);
+            citiesRow.addEventListener('mouseleave', startAutoScroll);
+            
+            // Start auto scroll
+            startAutoScroll();
+
+            // Parallax effect for background shapes
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const shapes = document.querySelectorAll('.floating-shape');
+
+                shapes.forEach((shape, index) => {
+                    const speed = 0.5 + (index * 0.2);
+                    shape.style.transform = `translateY(${scrolled * speed}px)`;
+                });
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('opacity-0', 'translate-y-12');
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+
+</html>
